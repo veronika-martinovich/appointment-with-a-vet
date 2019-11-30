@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/cat.svg" alt="Logo" class="logo-image">
+            <p class="logo-text">Wisdom Pet Medicine</p>
+        </div>
+    </header>
+
+    <main>
+        <form action="" class="apt-form">
+            <div class="form-header"><span>+</span><h1 class="heading">Add appointment</h1></div>
+            <div class="input-wrapper">
+                <div class="input-petname">
+                    <label for="new-petname">Pet Name</label>
+                    <input type="text" name="new-petname" id="new-petname" placeholder="Pet's Name" class="validation-correct">
+                </div>
+                <div class="input-petowner">
+                    <label for="new-petowner">Pet Owner</label>
+                    <input type="text" name="new-petowner" id="new-petowner" placeholder="Owner's Name" class="validation-correct">
+                </div>
+                <div class="input-date">
+                    <label for="new-apt-date">Date</label>
+                    <input type="text" name="new-apt-date" id="new-apt-date" placeholder="mm/dd/yyyy" class="validation-correct">
+                </div>
+                <div class="input-time">
+                    <label for="new-apt-time">Time</label>
+                    <input type="text" name="new-apt-time" id="new-apt-time" placeholder="--:-- --" class="validation-correct">
+                </div>
+                <div class="input-apt-notes">
+                    <label for="new-apt-notes">Apt. Notes</label>
+                    <textarea name="new-apt-notes" id="new-apt-notes" cols="100" rows="5" placeholder="Appointment Notes" class="validation-correct"></textarea>
+                </div>
+                <input type="submit" value="Add Appointment" name="add">
+            </div>    
+        </form>
+
+        <div class="search">
+            <input type="text" name="search-text" id="search-text" placeholder="Search">
+            <select name="sort-by" id="sort-by">
+                <option selected hidden>Sort by:</option>
+                <option value="petName">Pet name</option>
+                <option value="petOwner">Owner</option>
+                <option value="date">Appointment date</option>
+                <option value="time">Appointment time</option>
+            </select>
+        </div>
+
+        <div class="apt-list">
+        <div class="apt-list-item">
+            <img src="assets/cancel.svg" alt="Cross" class="delete-icon">
+            <div class="apt-details">
+                <div class="petname">Buffy</div>
+                <div class="date">2016-06-20</div>
+                <div class="time">15:30</div>
+                <div class="owner">Owner: Hassum</div>
+                <div class="note">Bla bla bla</div>
+            </div>
+        </div>
+        </div>
+        
+    </main>
+    
+</body>
+</html>

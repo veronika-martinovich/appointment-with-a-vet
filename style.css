@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #3772cc;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+    margin-left: 7%;
+    margin-right: 1%;
+}
+
+.apt-form {
+    height: 370px;
+    margin: 3% auto;
+    max-width: 85%;
+    border: 1px solid #3772cc;
+    border-radius: 4px;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    border-radius: 4px 4px 0px 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #3772cc;
+    color: #ffffff;
+}
+
+.form-header span {
+    margin-top: 0;
+    margin-left: 1%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.heading {
+    margin-left: 0.5%;
+    width: 15%;
+    font-size: 1.1rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 85%;
+    margin-top: 2%;
+    margin-left: 9%;
+}
+
+.input-petname, .input-petowner, .input-date, .input-time, .input-apt-notes {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5%;
+    font-weight: bold;
+    color: #203d69;
+}
+
+.input-petname, .input-petowner, .input-apt-notes {
+    width: 100%;
+}
+
+.input-date, .input-time {
+    width: 50%;
+}
+
+input[name="new-petname"], input[name="new-petowner"], textarea[name="new-apt-notes"] {
+    width:90%;
+    margin-left: 15px;
+}
+
+input[name="new-apt-date"] {
+    width: 60%;
+    margin-left: 15px;
+    margin-right: 20%;
+}
+
+input[name="new-apt-time"] {
+    width: 60%;
+    margin-left: 15px;
+}
+
+input[name="new-petname"], input[name="new-petowner"], input[name="new-apt-date"], input[name="new-apt-time"] {
+    height: 30px; 
+}
+
+input[name="new-petname"], input[name="new-petowner"], input[name="new-apt-date"], input[name="new-apt-time"], textarea[name="new-apt-notes"] {
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.validation-correct {
+    border: 1px solid #cfcccc;
+}
+
+.validation-error {
+    border: 1px solid #e92828;
+}
+
+input[placeholder], textarea[placeholder], input[name="add"] {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.8rem;
+}
+
+input[name="add"] {
+    height: 30px;
+    border: 1px solid #cfcccc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10%;
+    background-color: #3772cc;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.apt-list-item {
+    display: flex;
+    flex-direction: row wrap;
+    align-items: flex-start;
+    height: 115px;
+    margin: 0 auto;
+    max-width: 70%;
+    padding-top: 2%;
+    border-bottom: 1.5px solid #cfcccc;
+}
+
+.delete-icon {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.apt-details {
+    width: 97%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left: 1%;
+    color: #203d69;
+}
+
+.petname {
+    width: 80%;
+    color: #3772cc;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.date, .time {
+    width: 10%;
+    font-style: italic;
+}
+
+.owner, .note {
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content: stretch;
+    margin: 0 auto;
+    width: 40%;
+    height: 30px;
+}
+
+input[name="search-text"] {
+    width: 77%;
+    border: 1px solid #cfcccc;
+    border-radius: 4px 0px 0px 4px;
+    padding-left: 1%;
+}
+
+select[name="sort-by"] {
+    width: 23%;
+    border: 1px solid #2f5ea5;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #3772cc;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+select[name="sort-by"] option {
+    background-color: #ffffff;
+    color: #203d69;
+}
+
+.data-validation {
+    border: 1px solid #e92828;
+      
+}
